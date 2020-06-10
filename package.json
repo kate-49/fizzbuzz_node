@@ -1,27 +1,8 @@
 {
-  "name": "fizzbuzz-javascript",
-  "version": "0.0.1",
-  "description": "FizzBuzz kata with Node.js",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:giorgiosironi/fizzbuzz-javascript.git"
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
-    "chai": "*",
-    "jshint": "^2.9.1",
-    "mocha": "*"
-  },
-  "scripts": {
-    "test": "node_modules/mocha/bin/mocha .",
-    "jshint": "node_modules/jshint/bin/jshint ."
-  },
-  "keywords": [
-    "fizzbuzz",
-    "javascript",
-    "node",
-    "mocha"
-  ],
-  "author": "Giorgio Sironi",
-  "license": "MIT"
+    "jest": "^26.0.1"
+  }
 }

@@ -1,30 +1,15 @@
 'use strict';
 
-var multipleOf = function(factor, number) {
-  return number % factor === 0;
-};
-
-var mappings = [
-  { factor: 3, word: 'Fizz' },
-  { factor: 5, word: 'Buzz' }
-];
-
-var fizzbuzz = function(number) {
-  if ((typeof number) !== 'number') {
-    throw new TypeError('"' + number + '" is not a valid input');
-  }
-  var words = mappings
-    .filter(function(mapping) {
-      return multipleOf(mapping.factor, number);
-    })
-    .map(function(mapping) {
-      return mapping.word;
-    });
-  if (words.length > 0) {
-    return words.join('');
-  } else {
-    return number.toString();
-  }
+var fizzbuzz = function(num) {
+  if (num % 15 === 0) {
+      return 'FizzBuzz';
+    } else if (num % 3 === 0) {
+      return 'Fizz';
+    } else if (num % 5 === 0) {
+      return 'Buzz';
+    } else {
+      return num;
+    }
 };
 
 module.exports = fizzbuzz;
