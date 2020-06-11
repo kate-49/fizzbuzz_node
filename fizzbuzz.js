@@ -1,4 +1,14 @@
 'use strict';
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("What is your number? ", function(number) {
+  console.log(fizzbuzz(number));
+  rl.close();
+});
 
 var fizzbuzz = function(num) {
   if (num % 15 === 0) {
