@@ -1,6 +1,6 @@
 'use strict';
 
-var fizzbuzz = require('./fizzbuzz');
+var fizzbuzz = require('../models/fizzbuzz');
 
 describe('FizzBuzz', function() {
   it('should return Fizz for multiples of 3', function() {
